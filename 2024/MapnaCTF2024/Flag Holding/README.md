@@ -6,6 +6,11 @@
 > http://18.184.219.56:8080/
 
 ## Solution
+The server prompts us the requirements to get the flag by modifying request header. 
+
+> You are not coming from "http://flagland.internal/”
+- Use `Referer` header to http://flagland.internal/
+
 ```
 GET / HTTP/1.1
 Host: 18.184.219.56:8080
@@ -18,6 +23,8 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 Connection: close
 ```
+> Unspecified "secret"
+- Looks like we have to send `secret` parameter. Just assign any value.
 ```
 GET /?secret=a HTTP/1.1
 Host: 18.184.219.56:8080
@@ -30,12 +37,9 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 Connection: close
 ```
-```html
-<body>
-	<div class="msg" style="">
-		Incorrect secret. <!-- hint: secret is ____ which is the name of the protocol that both this server and your browser agrees on... -->	</div>
-</body>
-```
+
+> Incorrect secret. <!-- hint: secret is ____ which is the name of the protocol that both this server and your browser agrees on... —>
+- We need to change `secret` value. The answer is `http`.
 ```
 GET /?secret=http HTTP/1.1
 Host: 18.184.219.56:8080
@@ -48,12 +52,9 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 Connection: close
 ```
-```html
-<body>
-	<div class="msg" style="">
-		Sorry we don't have "GET" here but we might have other things like "FLAG".	</div>
-</body>
-```
+
+> Sorry we don't have "GET" here but we might have other things like "FLAG”.
+- We need to change `GET` method to `FLAG`.
 ```
 FLAG /?secret=http HTTP/1.1
 Host: 18.184.219.56:8080
@@ -73,4 +74,6 @@ Connection: close
 </body>
 ```
 ## Flag
-The flag for this challenge is ```MAPNA{533m5-l1k3-y0u-kn0w-h77p-1836a2f}```
+```
+MAPNA{533m5-l1k3-y0u-kn0w-h77p-1836a2f}
+```
