@@ -214,7 +214,7 @@ After visiting this link, we are redirected to a Google Drive file flag.txt.
 exiftool My_pdf.pdf
 ```
 This will show you the Author field which contains the flag.
-![image](https://github.com/user-attachments/assets/061d619d-0bcb-4fe5-922b-fb365d2a7332)
+![image](https://github.com/user-attachments/assets/500d1a5f-66ca-4a3c-99d8-b1becadfd180)
 
 ## Flag
 ```OSCTF{H3il_M3taD4tA}```
@@ -224,7 +224,7 @@ This will show you the Author field which contains the flag.
 
 Use ```binwalk``` to extract all files inside the ```.docx```, proceed to ```document.xml``` and grep for the flag. <br> 
 
-![image](https://github.com/user-attachments/assets/511b986c-f28c-453a-8ab3-9ae094109263)
+![image](https://github.com/user-attachments/assets/37b21659-c59b-4a52-986a-8957f8a9fccd)
 
 ## Flag
 
@@ -237,7 +237,7 @@ OSCTF{V3l10n4_1s_Gr43t}
 ## Solution
 
 - Just open the file in audacity and view spectogram. 
-![image](https://github.com/user-attachments/assets/fd0d2d6d-3eef-412a-b4d7-08e5fdc6597a)
+![image](https://github.com/user-attachments/assets/2f8748c0-020e-4cf3-a75e-913d86bcb55f)
 
 ## Flag
 
@@ -249,7 +249,7 @@ OSCTF{M3s54g3_1nt3Rc3p7eD}
 ## Solution
 
 We are given ```image.png``` which is actually a jpeg image with a corrupted header. On correcting the [header](corrected.png) we are greeted with the flag.
-![image](https://github.com/user-attachments/assets/3d8befeb-b4f7-4d46-97c9-0abfd37bb793)
+![image](https://github.com/user-attachments/assets/8aa98e50-5228-44dd-a561-de68fdc981a9)
 
 ## Flag
 
