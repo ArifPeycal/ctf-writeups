@@ -1,4 +1,5 @@
 # What's My Password
+![image](https://github.com/user-attachments/assets/9769118b-b0ee-434c-8592-76fad9827093)
 
 ### Solution
 
