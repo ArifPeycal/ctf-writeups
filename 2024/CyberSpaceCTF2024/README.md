@@ -3,10 +3,10 @@
 - Duration: 48 hours
 - Location: https://2024.csc.tf/ (Online)
 
-![image](https://github.com/user-attachments/assets/23769a66-63ef-4c1c-87f3-f63a56a3fe66)
+![image](https://github.com/user-attachments/assets/304b1e03-c230-48f2-8450-28b71e3dbd53)
 
 ## Result
-![image](https://github.com/user-attachments/assets/a5c70a77-d994-4ac3-a937-d14296c08d11)
+![image](https://github.com/user-attachments/assets/483d3b96-59f2-438b-9987-aa2b5d175ccb)
 
 ## List of Challenges
 
