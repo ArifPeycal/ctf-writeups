@@ -1,3 +1,7 @@
+# What's Next
+## Challenge Overview
+In this challenge, we are given a Python script that performs a simple XOR-based encryption. Basically, it converts the message into a long integer and encrypts the message by XORing it with a key (`c = KEY ^ m`).
+
 ```python
 from random import *
 from Crypto.Util.number import *
@@ -23,7 +27,12 @@ TMP = [0, 6053211329815693403500689240850895536128241177399911236434734111107501
 KEY = 23226475334448992634882677537728533150528705952262010830460862502359965393545
 enc = 2290064970177041546889165766737348623235283630135906565145883208626788551598431732
 ```
+## Solution
+Since we already have the encrypted message, `enc` and `KEY`, we can reverse the encryption XORing `KEY` with `enc`.
 ```
 print(long_to_bytes(KEY ^ enc).decode())
 ```
-```MAPNA{R_U_MT19937_PRNG_Predictor?}```
+## Flag
+```
+MAPNA{R_U_MT19937_PRNG_Predictor?}
+```
