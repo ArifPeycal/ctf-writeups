@@ -1,5 +1,8 @@
 # IrisCTF 2024 Writeups
 
+![image](https://github.com/user-attachments/assets/89d51cec-c2d1-4dd2-9e88-ca8359e88126)
+
+## List of Challenges
 | Category                        | Challenge                                                          | 
 | ------------------------------- | ------------------------------------------------------------ | 
 |    OSINT                        | <a href = https://github.com/ArifPeycal/IrisCTF2024-Writeup/tree/main/Czech%20Where%3F> Czech Where?  </a> | 
