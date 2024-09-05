@@ -1,6 +1,6 @@
 # rENTASCTF2024-Writeups
 
-![rawsec](https://github.com/user-attachments/assets/a0e227d3-73a8-4600-b2ed-0136b14c9b07)
+![rawsec](https://github.com/user-attachments/assets/dc55bdfe-75f1-4273-8cc2-8c321bf81a1b)
 
 ## Result
-![image](https://github.com/user-attachments/assets/97be7faa-ce9e-4afa-a2a1-eb7d8a8da387)
+![image](https://github.com/user-attachments/assets/aeca77c9-cce5-40ab-b28b-832ae34c0521)
