@@ -7,7 +7,7 @@
 ## Challenge Overview
 This challenge wants us to access the feature page but it will redirect back to home page until the timer runs out (which is after 7 days)
 
-![image](https://github.com/user-attachments/assets/7ad18c1a-1cdb-4d89-929b-2041a286c5d6)
+![image](https://github.com/user-attachments/assets/76e98010-5efd-49f4-971d-64520971aeb4)
 <details> 
   <summary> Source code for app.py</summary>
   
