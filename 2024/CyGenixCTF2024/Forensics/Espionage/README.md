@@ -8,7 +8,6 @@
 - Open ```Wireshark``` -> ```Statistics``` -> ```Protocol Hierarchy``` -> ```TCP```
 - Follow TCP stream (stream 3)
 - pswrd=UEFwZHNqUlRhZQ%3D%3D
-![image](https://github.com/user-attachments/assets/85ac6ad0-f4a7-4249-bd19-94fd24dfefb0)
 - URL Decode and Base64, we get the password as ```PApdsjRTae```
 
 ## Flag
