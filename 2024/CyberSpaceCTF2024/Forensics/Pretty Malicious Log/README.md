@@ -33,7 +33,7 @@ Your answer: 13
 ```
 We know that the malware will be related to the cracked Adobe program. From Process Tree, we can see `adobe.exe` program with PID `1184`, being called by Explorer.exe (PID 3440) and have two executables mOkkYMEs.exe (PID 6988), pcgsoUwQ.exe (PID 6776)
 
-![image](https://github.com/user-attachments/assets/4bb6938b-e8b5-4d9d-946e-9a5de102b85c)
+![image](https://github.com/user-attachments/assets/cc85df27-3498-4eff-9158-d1691fd7b533)
 
 Filter:
 - Operation is RegSetValue
@@ -41,8 +41,9 @@ Filter:
 - PPID is 1184
 - plus 1 for adobe.exe
 
-![image](https://github.com/user-attachments/assets/3045d059-9b1e-4b56-ac9b-43f00d9594ac)
-![image](https://github.com/user-attachments/assets/3d9768df-4c40-4d54-9ce2-78e130d2b6c9)
+![image](https://github.com/user-attachments/assets/53e98d2e-c0bb-483f-9eff-2e466d6544ba)
+
+![image](https://github.com/user-attachments/assets/51a88448-f9c9-4671-a911-f6af1bc3fa79)
 
 ### Question 3:
 
