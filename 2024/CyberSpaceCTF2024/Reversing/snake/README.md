@@ -5,7 +5,7 @@
 ## Challenge Description
 We were given an ELF file which is a CLI snake game. Every time we eat an apple, we get 10 points. But, we need exactly 16525 points in order to get the flag.
 
-![image](https://github.com/user-attachments/assets/a4061bc1-acdc-4d97-a180-b88cae232c73)
+![image](https://github.com/user-attachments/assets/38307ab4-2d13-4f0b-bfaa-6cc659c21ca1)
 
 ## Solution
 
