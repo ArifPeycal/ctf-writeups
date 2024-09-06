@@ -34,4 +34,4 @@ with open(input_filename, 'r') as infile, open(output_filename, 'wb') as outfile
 
 ```
 ## Flag
-![output1](https://github.com/user-attachments/assets/4155aea0-8296-4a8a-97e1-486cf5b6965a)
+![image](https://github.com/user-attachments/assets/5b3d3408-6f42-46c5-96bb-70e01ea58ed9)
