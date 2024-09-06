@@ -4,11 +4,9 @@
 ## Challenge Overview
 We were given a pcap file called `chall.pcap`. First of all, I tried to look into Protocol Hirerechy to see what are the contents of the packet file. We can see that there are a lot of TCP packets which consists of several HTTP packets. We'll look into that first.
 
-![image](https://github.com/user-attachments/assets/7c142dfa-c2d2-43e9-af82-bd09dd219f8b)
-
 There are two endpoints which are `/` and `/images`. 
 
-![image](https://github.com/user-attachments/assets/164c6b2e-44c7-4cae-b5d1-fd18e1059588)
+![image](https://github.com/user-attachments/assets/fad06550-59cb-4bab-a281-3665cb6255c3)
 
 When we follow the HTTP stream, we see that the HTML contents are obfuscated. 
 
