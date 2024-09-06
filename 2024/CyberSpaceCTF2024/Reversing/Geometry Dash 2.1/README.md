@@ -21,7 +21,7 @@ c3RvcCBwbGF5aW5nIHRoZSBnYW1lIQ== → stop playing the game!
 ```
 We also get a string that is similar to the flag format without the curly braces, `CSCTFa52de5`. The description also stated that <a href="https://gdbrowser.com/search">GDBrowser</a> must be used for the last step. GDBrowser is a website that allows us to search for Geometry Dash related such as Users and Levels. Bybusing the website search engine, we know that `CSCTFa52de5` is a user. The flag is located at the user's comment.
 
-![image](https://github.com/user-attachments/assets/c3f5d5ec-4703-42a0-89a3-dcf08fe6503a)
+![image](https://github.com/user-attachments/assets/37f83e4d-99bc-4d7a-a514-4c901e02fe6e)
 
 ## Flag 
 ```
