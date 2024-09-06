@@ -213,13 +213,9 @@ if __name__ == '__main__':
 - Make sure `debug` GET parameter link `/release` is set to `True`.
 - Check our `ngrok` server, we can see requests from the server.
 
-![image](https://github.com/user-attachments/assets/d7094a45-26ba-4ec1-9e7d-53ad3b5f073d)
-
-![image](https://github.com/user-attachments/assets/75f46598-037d-40e3-b1b7-cbc85e99ad2f)
-
 We finally can access to `/feature` page.
 
-![image](https://github.com/user-attachments/assets/630e624d-c1e7-4ff1-b8a9-9aa8670403f1)
+![image](https://github.com/user-attachments/assets/71917899-cdbe-4b50-8922-b4d5f7badd10)
 
 ### Command Injection
 The feature page can count how many words are inside our input by using `echo` and `wc -w`. When I put `;` in the input, it gives us an error. 
@@ -230,7 +226,7 @@ In order to read the flag.txt, we can use `$(...)` (Command substitution syntax)
 
 > Command substitution is a shell feature that allows the output of a command to be used as an argument in another command.
 
-![image](https://github.com/user-attachments/assets/b0186dd0-f545-4fa0-83f4-c8c552540034)
+![image](https://github.com/user-attachments/assets/8ee8a4c4-a026-493b-841c-2d1228ceefa3)
 
 Another way is to send the flag back to our server as base64. We can use `Webhook` or `ngrok` as our receiving server.
 
