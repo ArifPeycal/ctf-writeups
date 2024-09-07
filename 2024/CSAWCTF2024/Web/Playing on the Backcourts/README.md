@@ -206,3 +206,5 @@ We get the flag in the `leaderboard.txt`.
 csawctf{5H1774K3_Mu5Hr00M5_1_fuX0R3d_Up_50n_0F_4_81207CH}
 ```
 
+## References: 
+https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html
