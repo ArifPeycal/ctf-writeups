@@ -29,7 +29,7 @@ We can start analyzing HTTP packets first by following HTTP stream. There is som
 This Python code leverages Scapy to create a covert channel by encoding a message into the IP header of TCP packets. The goal is to send a hidden message by encoding each character into the `IP.id` field of the IP packet
 
 For each letter in the flag The ASCII value of the letter is calculated using ord(letter).
-This ASCII value is multiplied by key to generate a new value, which is stored in the id field of the IP header. The IP.id field is typically used to identify IP packets, but here it is being repurposed for covert communication.
+This ASCII value is multiplied by key to generate a new value, which is stored in the id field of the IP header. The `IP.id` field is typically used to identify IP packets, but here it is being repurposed for covert communication.
 
 ```py
 <html><body>
@@ -55,3 +55,31 @@ This ASCII value is multiplied by key to generate a new value, which is stored i
     encode_message(&#34;????????????&#34;)
         </body></html>
 ```
+
+```py
+from scapy.all import rdpcap, IP, TCP
+
+key = 55
+
+def decode_message(ip_ids, key):
+    message = ''
+    for ip_id in ip_ids:
+        char = chr(ip_id // key)
+        message += char
+    return message
+
+packets = rdpcap('chall.pcapng') 
+
+ip_ids = []
+
+for packet in packets:
+    if IP in packet and TCP in packet:
+        if packet[IP].src == "172.20.10.5" and packet[IP].dst == "172.57.57.57":
+            ip_ids.append(packet[IP].id)
+
+flag = decode_message(ip_ids, key)
+
+print(f"Decoded flag: {flag}")
+
+```
+
