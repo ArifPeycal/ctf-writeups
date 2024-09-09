@@ -3,7 +3,7 @@
 
 
 ## Result
-![image](https://github.com/user-attachments/assets/02799b11-ec0b-4305-95ba-05ddddb13755)
+![image](https://github.com/user-attachments/assets/7730b6ab-e270-436f-8412-9e4476a5a73b)
 
 ## Achievement
 I managed to solve all 5 OSINT questions as a solo player.
