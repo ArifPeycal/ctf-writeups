@@ -10,4 +10,5 @@ I managed to solve all 5 OSINT questions as a solo player.
 
 ![image](https://github.com/user-attachments/assets/9b1234ff-6ddd-4e8f-9935-026ff81ad6d5)
 
-
+## Stats
+![image](https://github.com/user-attachments/assets/70e4bd7d-f70e-4755-9757-64bc35a3c33a)
