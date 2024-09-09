@@ -3,89 +3,82 @@
 > Can you unlock the secrets hidden in the echoes of ancient code?
 
 ## Challenge Overview
+
+This code appears to be part of a function that validates whether an input contains a specific sequence of byte values. 
+
+Each byte of datapointer is processed by:
+
+- XOR operation: The byte is XORed with a constant (e.g., *flag ^ 18).
+- Arithmetic and shifting: The result of the XOR is added to a constant, right-shifted by 5 bits, and combined with other operations such as multiplying by 8 and adding constants.
+- Comparison: The final result of these operations is compared to predefined constants.
+
 ```c++
+
 undefined8 FUN_140001110(int param_1,longlong param_2)
 
 {
   longlong *outputpointer;
-  byte *datapointer;
+  byte *flag;
   
   if (param_1 != 2) {
                     /* WARNING: Subroutine does not return */
     exit(1);
   }
-  datapointer = *(byte **)(param_2 + 8);
-  if (((((((((((*datapointer ^ 18) + 5 >> 5 | (*datapointer ^ 18) * 8 + 40) == 610) &&
-            (((datapointer[1] ^ 0x23) + 7 >> 5 | (datapointer[1] ^ 0x23) * 8 + 0x38) == 827)) &&
-           (((datapointer[2] ^ 0x34) + 3 >> 5 | (datapointer[2] ^ 0x34) * 8 + 0x18) == 795)) &&
-          ((((datapointer[3] ^ 0x45) + 2 >> 5 | (datapointer[3] ^ 0x45) * 8 + 0x10) == 40 &&
-           (((datapointer[4] ^ 0x56) + 9 >> 5 | (datapointer[4] ^ 0x56) * 8 + 0x48) == 0x1b1)))) &&
-         (((datapointer[5] ^ 0x67) + 4 >> 5 | (datapointer[5] ^ 0x67) * 8 + 0x20) == 0x1d9)) &&
-        (((((datapointer[6] ^ 0x78) + 6 >> 5 | (datapointer[6] ^ 0x78) * 8 + 0x30) == 0xf8 &&
-          (((datapointer[7] ^ 0x89) + 1 >> 5 | (datapointer[7] ^ 0x89) * 8 + 8) == 1517)) &&
-         ((((datapointer[8] ^ 0x9a) + 3 >> 5 | (datapointer[8] ^ 0x9a) * 8 + 0x18) == 0x58d &&
-          (((((datapointer[9] ^ 0xab) + 5 >> 5 | (datapointer[9] ^ 0xab) * 8 + 0x28) == 0x6f6 &&
-            (((datapointer[10] ^ 0xbc) + 2 >> 5 | (datapointer[10] ^ 0xbc) * 8 + 0x10) == 0x6ee)) &&
-           (((datapointer[11] ^ 0xcd) + 7 >> 5 | (datapointer[11] ^ 0xcd) * 8 + 0x38) == 0x585))))))
-        )) && (((((((datapointer[12] ^ 0xde) + 4 >> 5 | (datapointer[12] ^ 0xde) * 8 + 0x20) ==
-                   0x61e && (((datapointer[13] ^ 0xef) + 3 >> 5 |
-                             (datapointer[13] ^ 0xef) * 8 + 0x18) == 0x6fe)) &&
-                 ((((datapointer[14] ^ 240) + 5 >> 5 | (datapointer[14] ^ 240) * 8 + 0x28) == 0x5a5
-                  && (((((datapointer[15] ^ 1) + 2 >> 5 | (datapointer[15] ^ 1) * 8 + 0x10) == 0x2aa
-                       && (((datapointer[16] ^ 0x12) + 9 >> 5 | (datapointer[16] ^ 0x12) * 8 + 0x48)
-                           == 0x151)) &&
-                      ((((datapointer[17] ^ 0x23) + 4 >> 5 | (datapointer[17] ^ 0x23) * 8 + 0x20) ==
-                        0x2ca && (((((datapointer[18] ^ 0x34) + 6 >> 5 |
-                                    (datapointer[18] ^ 0x34) * 8 + 0x30) == 0x2ba &&
-                                   (((datapointer[19] ^ 0x45) + 1 >> 5 |
-                                    (datapointer[19] ^ 0x45) * 8 + 8) == 0x1c1)) &&
-                                  (((datapointer[20] ^ 0x56) + 3 >> 5 |
-                                   (datapointer[20] ^ 0x56) * 8 + 0x18) == 0x141)))))))))) &&
-                ((((datapointer[21] ^ 0x67) + 5 >> 5 | (datapointer[21] ^ 0x67) * 8 + 0x28) == 0x2ca
-                 && (((datapointer[0x16] ^ 0x78) + 2 >> 5 | (datapointer[0x16] ^ 0x78) * 8 + 0x10)
-                     == 0x149)))) &&
-               (((datapointer[23] ^ 0x89) + 7 >> 5 | (datapointer[23] ^ 0x89) * 8 + 0x38) == 0x61e))
-              )) &&
-      (((((((datapointer[24] ^ 0x9a) + 4 >> 5 | (datapointer[24] ^ 0x9a) * 8 + 0x20) == 0x73f &&
-          (((datapointer[25] ^ 0xab) + 6 >> 5 | (datapointer[25] ^ 0xab) * 8 + 0x30) == 0x666)) &&
-         ((((datapointer[26] ^ 0xbc) + 1 >> 5 | (datapointer[26] ^ 0xbc) * 8 + 8) == 0x6fe &&
-          ((((((datapointer[0x1b] ^ 0xcd) + 3 >> 5 | (datapointer[0x1b] ^ 0xcd) * 8 + 0x18) == 0x52d
-             && (((datapointer[0x1c] ^ 0xde) + 5 >> 5 | (datapointer[0x1c] ^ 0xde) * 8 + 0x28) ==
-                 0x5bd)) &&
-            (((datapointer[0x1d] ^ 0xef) + 2 >> 5 | (datapointer[0x1d] ^ 0xef) * 8 + 0x10) == 0x444)
-            ) && ((((datapointer[0x1e] ^ 0xf0) + 7 >> 5 | (datapointer[0x1e] ^ 0xf0) * 8 + 0x38) ==
-                   0x4d4 && (((datapointer[0x1f] ^ 1) + 4 >> 5 | (datapointer[0x1f] ^ 1) * 8 + 0x20)
-                             == 0x313)))))))) &&
-        (((datapointer[0x20] ^ 0x12) + 6 >> 5 | (datapointer[0x20] ^ 0x12) * 8 + 0x30) == 0x2ea)) &&
-       (((((datapointer[0x21] ^ 0x23) + 1 >> 5 | (datapointer[0x21] ^ 0x23) * 8 + 8) == 0x2e2 &&
-         (((datapointer[0x22] ^ 0x34) + 3 >> 5 | (datapointer[0x22] ^ 0x34) * 8 + 0x18) == 0x2a2))
-        && ((((datapointer[0x23] ^ 0x45) + 5 >> 5 | (datapointer[0x23] ^ 0x45) * 8 + 0x28) == 0x58
-            && (((((datapointer[0x24] ^ 0x56) + 2 >> 5 | (datapointer[0x24] ^ 0x56) * 8 + 0x10) ==
-                  0x129 && (((datapointer[0x25] ^ 0x67) + 7 >> 5 |
-                            (datapointer[0x25] ^ 0x67) * 8 + 0x38) == 0xd0)) &&
-                (((datapointer[0x26] ^ 0x78) + 4 >> 5 | (datapointer[0x26] ^ 0x78) * 8 + 0x20) ==
-                 0xa8)))))))))) &&
-     ((((((datapointer[0x27] ^ 0x89) + 6 >> 5 | (datapointer[0x27] ^ 0x89) * 8 + 0x30) == 0x767 &&
-        (((datapointer[0x28] ^ 0x9a) + 3 >> 5 | (datapointer[0x28] ^ 0x9a) * 8 + 0x18) == 0x7bf)) &&
-       (((datapointer[0x29] ^ 0xab) + 5 >> 5 | (datapointer[0x29] ^ 0xab) * 8 + 0x28) == 1999)) &&
-      ((((((datapointer[0x2a] ^ 0xbc) + 2 >> 5 | (datapointer[0x2a] ^ 0xbc) * 8 + 0x10) == 0x777 &&
-         (((datapointer[0x2b] ^ 0xcd) + 7 >> 5 | (datapointer[0x2b] ^ 0xcd) * 8 + 0x38) == 0x828))
-        && ((((((datapointer[0x2c] ^ 0xde) + 4 >> 5 | (datapointer[0x2c] ^ 0xde) * 8 + 0x20) ==
-               0x56d && (((((datapointer[0x2d] ^ 0xef) + 6 >> 5 |
-                           (datapointer[0x2d] ^ 0xef) * 8 + 0x30) == 0x484 &&
-                          (((datapointer[0x2e] ^ 0xf0) + 1 >> 5 | (datapointer[0x2e] ^ 0xf0) * 8 + 8
-                           ) == 0x41c)) &&
-                         (((datapointer[0x2f] ^ 1) + 3 >> 5 | (datapointer[0x2f] ^ 1) * 8 + 0x18) ==
-                          0x30b)))) &&
-             ((((datapointer[0x30] ^ 0x12) + 5 >> 5 | (datapointer[0x30] ^ 0x12) * 8 + 0x28) ==
-               0x129 && (((datapointer[0x31] ^ 0x23) + 2 >> 5 |
-                         (datapointer[0x31] ^ 0x23) * 8 + 0x10) == 0xa8)))) &&
-            (((datapointer[0x32] ^ 0x34) + 7 >> 5 | (datapointer[0x32] ^ 0x34) * 8 + 0x38) == 0x68))
-           )) && (((((datapointer[0x33] ^ 3) + 5 >> 5 | (datapointer[0x33] ^ 3) * 8 + 0x28) == 0x1e1
-                   && (((datapointer[0x34] ^ 0xbe) + 3 >> 5 | (datapointer[0x34] ^ 0xbe) * 8 + 0x18)
-                       == 0x515)) &&
-                  (((datapointer[0x35] ^ 0xfe) + 6 >> 5 | (datapointer[0x35] ^ 0xfe) * 8 + 0x30) ==
-                   0x44c)))))))) {
+  flag = *(byte **)(param_2 + 8);
+  if (((((((((((*flag ^ 18) + 5 >> 5 | (*flag ^ 18) * 8 + 40) == 610) &&
+            (((flag[1] ^ 0x23) + 7 >> 5 | (flag[1] ^ 0x23) * 8 + 0x38) == 827)) &&
+           (((flag[2] ^ 0x34) + 3 >> 5 | (flag[2] ^ 0x34) * 8 + 0x18) == 795)) &&
+          ((((flag[3] ^ 0x45) + 2 >> 5 | (flag[3] ^ 0x45) * 8 + 0x10) == 40 &&
+           (((flag[4] ^ 0x56) + 9 >> 5 | (flag[4] ^ 0x56) * 8 + 0x48) == 0x1b1)))) &&
+         (((flag[5] ^ 0x67) + 4 >> 5 | (flag[5] ^ 0x67) * 8 + 0x20) == 0x1d9)) &&
+        (((((flag[6] ^ 0x78) + 6 >> 5 | (flag[6] ^ 0x78) * 8 + 0x30) == 0xf8 &&
+          (((flag[7] ^ 0x89) + 1 >> 5 | (flag[7] ^ 0x89) * 8 + 8) == 1517)) &&
+         ((((flag[8] ^ 0x9a) + 3 >> 5 | (flag[8] ^ 0x9a) * 8 + 0x18) == 0x58d &&
+          (((((flag[9] ^ 0xab) + 5 >> 5 | (flag[9] ^ 0xab) * 8 + 0x28) == 0x6f6 &&
+            (((flag[10] ^ 0xbc) + 2 >> 5 | (flag[10] ^ 0xbc) * 8 + 0x10) == 0x6ee)) &&
+           (((flag[11] ^ 0xcd) + 7 >> 5 | (flag[11] ^ 0xcd) * 8 + 0x38) == 0x585)))))))) &&
+       (((((((flag[12] ^ 0xde) + 4 >> 5 | (flag[12] ^ 0xde) * 8 + 0x20) == 0x61e &&
+           (((flag[13] ^ 0xef) + 3 >> 5 | (flag[13] ^ 0xef) * 8 + 0x18) == 0x6fe)) &&
+          ((((flag[14] ^ 240) + 5 >> 5 | (flag[14] ^ 240) * 8 + 0x28) == 0x5a5 &&
+           (((((flag[15] ^ 1) + 2 >> 5 | (flag[15] ^ 1) * 8 + 0x10) == 0x2aa &&
+             (((flag[16] ^ 0x12) + 9 >> 5 | (flag[16] ^ 0x12) * 8 + 0x48) == 0x151)) &&
+            ((((flag[17] ^ 0x23) + 4 >> 5 | (flag[17] ^ 0x23) * 8 + 0x20) == 0x2ca &&
+             (((((flag[18] ^ 0x34) + 6 >> 5 | (flag[18] ^ 0x34) * 8 + 0x30) == 0x2ba &&
+               (((flag[19] ^ 0x45) + 1 >> 5 | (flag[19] ^ 0x45) * 8 + 8) == 0x1c1)) &&
+              (((flag[20] ^ 0x56) + 3 >> 5 | (flag[20] ^ 0x56) * 8 + 0x18) == 0x141)))))))))) &&
+         ((((flag[21] ^ 0x67) + 5 >> 5 | (flag[21] ^ 0x67) * 8 + 0x28) == 0x2ca &&
+          (((flag[0x16] ^ 0x78) + 2 >> 5 | (flag[0x16] ^ 0x78) * 8 + 0x10) == 0x149)))) &&
+        (((flag[23] ^ 0x89) + 7 >> 5 | (flag[23] ^ 0x89) * 8 + 0x38) == 0x61e)))) &&
+      (((((((flag[24] ^ 0x9a) + 4 >> 5 | (flag[24] ^ 0x9a) * 8 + 0x20) == 0x73f &&
+          (((flag[25] ^ 0xab) + 6 >> 5 | (flag[25] ^ 0xab) * 8 + 0x30) == 0x666)) &&
+         ((((flag[26] ^ 0xbc) + 1 >> 5 | (flag[26] ^ 0xbc) * 8 + 8) == 0x6fe &&
+          ((((((flag[0x1b] ^ 0xcd) + 3 >> 5 | (flag[0x1b] ^ 0xcd) * 8 + 0x18) == 0x52d &&
+             (((flag[0x1c] ^ 0xde) + 5 >> 5 | (flag[0x1c] ^ 0xde) * 8 + 0x28) == 0x5bd)) &&
+            (((flag[0x1d] ^ 0xef) + 2 >> 5 | (flag[0x1d] ^ 0xef) * 8 + 0x10) == 0x444)) &&
+           ((((flag[0x1e] ^ 0xf0) + 7 >> 5 | (flag[0x1e] ^ 0xf0) * 8 + 0x38) == 0x4d4 &&
+            (((flag[0x1f] ^ 1) + 4 >> 5 | (flag[0x1f] ^ 1) * 8 + 0x20) == 0x313)))))))) &&
+        (((flag[0x20] ^ 0x12) + 6 >> 5 | (flag[0x20] ^ 0x12) * 8 + 0x30) == 0x2ea)) &&
+       (((((flag[0x21] ^ 0x23) + 1 >> 5 | (flag[0x21] ^ 0x23) * 8 + 8) == 0x2e2 &&
+         (((flag[0x22] ^ 0x34) + 3 >> 5 | (flag[0x22] ^ 0x34) * 8 + 0x18) == 0x2a2)) &&
+        ((((flag[0x23] ^ 0x45) + 5 >> 5 | (flag[0x23] ^ 0x45) * 8 + 0x28) == 0x58 &&
+         (((((flag[0x24] ^ 0x56) + 2 >> 5 | (flag[0x24] ^ 0x56) * 8 + 0x10) == 0x129 &&
+           (((flag[0x25] ^ 0x67) + 7 >> 5 | (flag[0x25] ^ 0x67) * 8 + 0x38) == 0xd0)) &&
+          (((flag[0x26] ^ 0x78) + 4 >> 5 | (flag[0x26] ^ 0x78) * 8 + 0x20) == 0xa8)))))))))) &&
+     ((((((flag[0x27] ^ 0x89) + 6 >> 5 | (flag[0x27] ^ 0x89) * 8 + 0x30) == 0x767 &&
+        (((flag[0x28] ^ 0x9a) + 3 >> 5 | (flag[0x28] ^ 0x9a) * 8 + 0x18) == 0x7bf)) &&
+       (((flag[0x29] ^ 0xab) + 5 >> 5 | (flag[0x29] ^ 0xab) * 8 + 0x28) == 1999)) &&
+      ((((((flag[0x2a] ^ 0xbc) + 2 >> 5 | (flag[0x2a] ^ 0xbc) * 8 + 0x10) == 0x777 &&
+         (((flag[0x2b] ^ 0xcd) + 7 >> 5 | (flag[0x2b] ^ 0xcd) * 8 + 0x38) == 0x828)) &&
+        ((((((flag[0x2c] ^ 0xde) + 4 >> 5 | (flag[0x2c] ^ 0xde) * 8 + 0x20) == 0x56d &&
+           (((((flag[0x2d] ^ 0xef) + 6 >> 5 | (flag[0x2d] ^ 0xef) * 8 + 0x30) == 0x484 &&
+             (((flag[0x2e] ^ 0xf0) + 1 >> 5 | (flag[0x2e] ^ 0xf0) * 8 + 8) == 0x41c)) &&
+            (((flag[0x2f] ^ 1) + 3 >> 5 | (flag[0x2f] ^ 1) * 8 + 0x18) == 0x30b)))) &&
+          ((((flag[0x30] ^ 0x12) + 5 >> 5 | (flag[0x30] ^ 0x12) * 8 + 0x28) == 0x129 &&
+           (((flag[0x31] ^ 0x23) + 2 >> 5 | (flag[0x31] ^ 0x23) * 8 + 0x10) == 0xa8)))) &&
+         (((flag[0x32] ^ 0x34) + 7 >> 5 | (flag[0x32] ^ 0x34) * 8 + 0x38) == 0x68)))) &&
+       (((((flag[0x33] ^ 3) + 5 >> 5 | (flag[0x33] ^ 3) * 8 + 0x28) == 0x1e1 &&
+         (((flag[0x34] ^ 0xbe) + 3 >> 5 | (flag[0x34] ^ 0xbe) * 8 + 0x18) == 0x515)) &&
+        (((flag[0x35] ^ 0xfe) + 6 >> 5 | (flag[0x35] ^ 0xfe) * 8 + 0x30) == 0x44c)))))))) {
     FUN_1400018d0((longlong *)cout_exref,
                   "Congrats, you\'ve cracked it! Now, go claim your victory! \n");
     outputpointer = FUN_1400018d0((longlong *)cout_exref,"BTW your flag is: ");
@@ -95,8 +88,13 @@ undefined8 FUN_140001110(int param_1,longlong param_2)
   return 0;
 }
 
+
+
 ```
 ## Solution
+
+We create a Python script that attempts to reverse the operations applied to each datapointer value using brute force. It tries all possible byte values (0-255) and checks if, when processed with the same operations (XOR, addition, shift, multiplication), it matches the target_value.
+
 ```py
 def decrypt_datapointer(index, value, xor_value, add_shift, shift_right, mult_value, add_const, target_value):
     # Reverse the comparison (value ^ xor_value + add_shift >> shift_right | value ^ xor_value * mult_value + add_const)
