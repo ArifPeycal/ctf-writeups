@@ -55,6 +55,11 @@ This ASCII value is multiplied by key to generate a new value, which is stored i
     encode_message(&#34;????????????&#34;)
         </body></html>
 ```
+Filter out the `TCP` protocols and include `IP.id` as one of the columns. We can see that `IP.id` from `172.20.10.5` to `172.57.57.57` potentially becomes the flag since packet number `265` and `269` contain the same identification number (5445). Since the flag starts with letter "c", we can conclude that `ord('c')*key = 5445`. With some quick math, the key would be `55`.
+
+![image](https://github.com/user-attachments/assets/d97ba92b-0684-4822-80a1-4f48fcc02011)
+
+We created a Python script to extract `IP.id` from `172.20.10.5` to `172.57.57.57` and decode it using the key that we got. 
 
 ```py
 from scapy.all import rdpcap, IP, TCP
@@ -82,4 +87,7 @@ flag = decode_message(ip_ids, key)
 print(f"Decoded flag: {flag}")
 
 ```
-
+## Flag
+```
+csawctf{licen$e_t0_tr@nsmit_c0vertTCP$$$}
+```
