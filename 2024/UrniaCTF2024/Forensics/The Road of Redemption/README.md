@@ -24,3 +24,4 @@ There are two HTTP endpoints, `/` and `/key`.
 key : QXJhc1ZhbGxleV9NZWRpZXZhbFNocmluZV8xMjk3X3VjdGY=
 decoded_key: ArasValley_MedievalShrine_1297_uctf
 ```
+I tried run the command given and the output is in <a href="https://github.com/ArifPeycal/ctf-writeups/blob/main/2024/UrniaCTF2024/Forensics/The%20Road%20of%20Redemption/output.txt">output.txt</a>
