@@ -7,7 +7,7 @@ Too many admins spoil the broth. Can you login as the right admin and get the fl
 ## Writeup
 On launching the challenge we land at the homepage with two fields username and password, a classic authentication bypass
 
-![image](https://github.com/user-attachments/assets/d6852b10-346d-4e93-8224-540102eafcfa)
+![image](https://github.com/user-attachments/assets/71a378b8-daa9-4678-88b3-c2cfbe5277b4)
 
 
 On reading the source provided we can easily see to dump the details of all users we need to visit http://localhost:8000/?user=all
@@ -23,12 +23,12 @@ On reading the source provided we can easily see to dump the details of all user
     $query = "SELECT username, password, bio FROM users "
     }
 ```
-![image](https://github.com/user-attachments/assets/0e787eaf-e0eb-42a6-90cf-9441056093c2)
+![image](https://github.com/user-attachments/assets/119b3b64-2c1b-4ec7-aeb5-c16e3eb0a20e)
 
 
 On looking through dump.sql we find that we need to login as some user and his bio will contain the flag.
 
-![image](https://github.com/user-attachments/assets/e68156b9-e7cc-4ad9-b8fb-9885dc8e0c6e)
+![image](https://github.com/user-attachments/assets/7793ebfd-88fa-4e05-819d-c80eecbdaebc)
 
 ## Key Issues and Vulnerabilities
 1. SQL Injection:
