@@ -3,7 +3,7 @@
 - Time: 01:00 MYT - 01:00 MYT
 - Location: https://ctf.m0lecon.it/ (Online)
   
-![image](https://github.com/user-attachments/assets/b38868b6-acea-4668-b2dd-d1f06c5a066c)
+![image](https://github.com/user-attachments/assets/0b0f5a87-7f22-4f24-aae7-9675dfd2c7a8)
 
 ## List of Challenges
 
