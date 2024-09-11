@@ -4,7 +4,7 @@
 
 Accessing the link provided, we came across a login page
 
-![image](https://github.com/user-attachments/assets/879d0c69-81d6-4dbf-97de-4762fd2e3d8d)
+![image](https://github.com/user-attachments/assets/8e0c6a2f-0450-4494-8436-c6a98e240a42)
 
 When entering any combination of credentials, we get the following feedback
 
@@ -14,7 +14,7 @@ By gathering the information from the description, and from this message, we can
 
 With this, we can assume that there are routes that define the username, letter by letter (or you can find a route named K in a directory bruteforcing and infer from there).
 
-![image](https://github.com/user-attachments/assets/5b1a5d4f-3f12-42f6-b46b-e104164c3e02)
+![image](https://github.com/user-attachments/assets/5fe79b32-d68f-469d-aca3-939aad52d479)
 
 This induces us to continue to discover letter by letter of the username. To do this, you can create a script in a language of your choice, or use Burp Intruder. The Intruder wordlist should contain letters (a-zA-Z) and numbers (0–9), as the username is in leet.
 
@@ -35,7 +35,7 @@ while True:
 ```
 After finishing this guessing process, we discovered the name Kur0s4k1
 
-![image](https://github.com/user-attachments/assets/ea019336-1120-4531-a2e9-d46eb9081a73)
+![image](https://github.com/user-attachments/assets/da183030-2a3c-481d-ba39-a1518df859a9)
 
 We return to the login page and try any password
 
