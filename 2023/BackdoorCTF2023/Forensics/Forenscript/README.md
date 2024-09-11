@@ -35,7 +35,7 @@ def reverse_4byte_chunks(file_path, output_path):
 reverse_4byte_chunks(input_file_path, output_file_path)
 ```
 This script corrected the byte order in the file. After running it, the output was a valid PNG file with the correct header.
-![output](https://github.com/user-attachments/assets/ff68a751-423b-421e-8f62-39324bba10d8)
+![image](https://github.com/user-attachments/assets/b3b02a02-55ba-4114-8828-f83c750ac90b)
 
 ## Extracting Hidden Images with Binwalk
 With the PNG structure restored, we used Binwalk, a tool for analyzing and extracting files from binary data, to check for any hidden images or files within the corrected PNG.
@@ -45,7 +45,7 @@ binwalk -e fixed.png
 ```
 The -e option in Binwalk extracts any embedded files found in the binary data. Running this command revealed that there were indeed additional images hidden within the PNG.
 Here, we found multiple image files that were extracted from the original corrupted PNG. These images were part of the challenge and contained the flag.
-![a](https://github.com/user-attachments/assets/6066d22d-12ef-419c-bd88-52ee69d25ffe)
+![image](https://github.com/user-attachments/assets/79a29836-d9ec-4c4d-9bc1-98912f72b4cb)
 
 ## Flag
 ```flag{scr1pt1ng_r34lly_t0ugh_a4n't_1t??}```
