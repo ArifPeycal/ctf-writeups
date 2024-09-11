@@ -55,7 +55,7 @@ except Exception as e:
 ```
 
 Opening the output file in Notepad, we can see the ```PNG``` header. So, we can change the file extension to see the image.
-![decoded_output](https://github.com/user-attachments/assets/4566734b-f335-408e-9b37-67509114289f)
+![image](https://github.com/user-attachments/assets/4aae02af-b389-4969-8ddf-063220b2ff66)
 
 ## Flag
 ```flag{Th1s_time_n0t_cURs1v3}```
