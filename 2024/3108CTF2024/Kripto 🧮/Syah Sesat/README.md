@@ -6,7 +6,8 @@
 
 ## Challenge Overview
 ## Solution
-![image](https://github.com/user-attachments/assets/96874caa-5ca8-4e4c-876c-e78297179f6f)
+
+![image](https://github.com/user-attachments/assets/ed79121c-a14a-4618-a837-0e8c806e5da5)
 
 ## Flag
 ```
