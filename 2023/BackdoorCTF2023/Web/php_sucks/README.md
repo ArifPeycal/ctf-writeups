@@ -3,7 +3,7 @@
 > I hate PHP, and I know you hate PHP too. So, to irritate you, here is your PHP webapp. Go play with it <br>
 > Created by: ```j4ck4l```
 
-![image](https://github.com/user-attachments/assets/358b95d8-6315-41ba-bcbd-de9d2895f575)
+![image](https://github.com/user-attachments/assets/2d030b7c-81ca-401e-9c07-eac84300960f)
 
 Cleaning up the given php code to look better: -
 ```php
