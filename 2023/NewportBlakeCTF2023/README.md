@@ -3,7 +3,7 @@
 - Time:  08:00 MYT -  08:00 MYT
 - Location: https://nbctf.com/  (Online)
   
-![image](https://github.com/user-attachments/assets/db5b9a31-66ea-49ec-b006-16291b4dd9b9)
+![Untitled design (1)](https://github.com/user-attachments/assets/0848dcee-19a0-48b3-8131-1019e90c1426)
 
 ## Result
 
