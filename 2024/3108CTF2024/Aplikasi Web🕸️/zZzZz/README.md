@@ -5,7 +5,9 @@
 > https://9798fd3cc4.bahterasiber.my/
 
 ## Challenge Overview
-![image](https://github.com/user-attachments/assets/aaae3ede-1e91-481f-b5f8-7a1e69149274)
+![image](https://github.com/user-attachments/assets/d3f795c9-3e59-431f-ac0c-ce91712c0626)
+
+
 Bentan
 ```
 BETUL! You got it right.
