@@ -4,7 +4,6 @@
 
 ## Challenge Overview
 ## Solution
-![image](https://github.com/user-attachments/assets/040b639c-a7f7-422b-9e2f-2af65b75d740)
 
 ```bash
 strings CerCari | findstr "1963"
