@@ -39,3 +39,8 @@ for possible_key in GF(64):
         pass
 
 ```
+
+## Flag
+```
+HZ2024{th15_ch4ll3n63_1s_ch1ld'5_pl4y}
+```
