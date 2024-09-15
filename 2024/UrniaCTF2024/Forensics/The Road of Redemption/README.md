@@ -25,3 +25,8 @@ key : QXJhc1ZhbGxleV9NZWRpZXZhbFNocmluZV8xMjk3X3VjdGY=
 decoded_key: ArasValley_MedievalShrine_1297_uctf
 ```
 I tried run the command given and the output is in <a href="https://github.com/ArifPeycal/ctf-writeups/blob/main/2024/UrniaCTF2024/Forensics/The%20Road%20of%20Redemption/output.txt">output.txt</a>
+
+Use CyberChef version 9.0, the newer version of CyberChef didn't give the result. 
+![image](https://github.com/user-attachments/assets/babb0c39-96f3-4f19-a490-c312ff30e1bc)
+
+![image](https://github.com/user-attachments/assets/385e9f27-6b71-4c67-a8b3-98a6b6b6a3f1)
