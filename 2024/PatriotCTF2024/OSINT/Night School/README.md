@@ -4,6 +4,8 @@
 > 
 > The flag is pctf{NAME_OF_STATUE}
 
+![image](https://github.com/user-attachments/assets/262cb8f8-17c5-4e51-86f1-ca07da4bc477)
+
 Google Lens https://www.gmu.edu/discover-mason
 
 ![image](https://github.com/user-attachments/assets/3279dff5-847a-42e1-b147-62edd6f5bc21)
