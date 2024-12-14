@@ -14,3 +14,32 @@ print("Decoded Data:")
 print(decoded_data)
 
 ```
+
+```
+    
+Decoded Data:
+ls
+pwd
+clear
+id
+whoami
+cd /opt
+ls
+cd /root/
+ls -la
+echo _RSHIFT__RSHIFT__RSHIFT_"_LSHIFT__LSHIFT__LSHIFT__LSHIFT_H_LSHIFT_I_RSHIFT_" _RSHIFT__RSHIFT__RSHIFT_> hey.txt
+cat hey.txt
+cd /home/
+ls
+cd htb
+ls
+cd _LSHIFT_Desktop
+ls
+echo _RSHIFT_"yoo sup boiiii_RSHIFT_" _RSHIFT_> hello.txt
+cat hello.txt
+cd /root/adam
+nano pass.txt
+adam _RSHIFT__RSHIFT__RSHIFT__RSHIFT__RSHIFT_: _RSHIFT__RSHIFT__RSHIFT__RSHIFT__RSHIFT__RSHIFT__RSHIFT_"supers3cur3passw0rd_RSHIFT_"_LCTRL__LCTRL_xy
+clear
+bye bye
+```
