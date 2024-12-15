@@ -1,7 +1,9 @@
-
+# Collosal Breach
+## Description
+> A devastating data breach has occurred, in a remote satellite on the edge of the Frontier Cluster. You'll need to investigate the satellite, discover how the data was stolen, and finally discover what was stolen in order to prevent it falling into the wrong hands.
 
 ## Solution
-```
+```py
 def decode_xor(data, key=0x19):
     # Decode the log data by XORing each byte with the key
     return ''.join(chr(ord(c) ^ key) for c in data)
@@ -43,3 +45,12 @@ adam _RSHIFT__RSHIFT__RSHIFT__RSHIFT__RSHIFT_: _RSHIFT__RSHIFT__RSHIFT__RSHIFT__
 clear
 bye bye
 ```
+
+
+1. Who is the module's author?
+2. What is the name of the function used to register keyboard events?
+3. What is the name of the function that convers keycodes to strings?
+4. What file does the module create to store logs? Provide the full path
+5. What message does the module print when imported?
+6. What is the XOR key used to obfuscate the keys? (e.g. 0x01, 0x32)
+7. What is the password entered for 'adam'?
