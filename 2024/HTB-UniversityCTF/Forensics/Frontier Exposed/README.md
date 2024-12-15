@@ -44,3 +44,6 @@ Decode password from base64.
 
 
 ## Flag
+```
+HTB{C2_cr3d3nt14ls_3xp0s3d}
+```
