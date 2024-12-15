@@ -90,6 +90,10 @@ The response from the endpoint returned the following credentials:
 
 Testing the `credentials` endpoint with the ID provided (`6cfda83a-b055-4fd8-a040-57e5f1dae2eb`), I successfully retrieved the MongoDB connection URL:
 
+   ```
+   http://ai.apolo.htb/API/V1/credentials/6cfda83a-b055-4fd8-a040-57e5f1dae2eb
+   ```
+
 ```json
 {
     "id": "6cfda83a-b055-4fd8-a040-57e5f1dae2eb",
