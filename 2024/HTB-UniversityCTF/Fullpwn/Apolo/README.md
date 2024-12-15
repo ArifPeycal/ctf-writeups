@@ -5,6 +5,7 @@
 
 ![image](https://github.com/user-attachments/assets/84b4f90f-c94c-4197-b644-9062beec7f75)
 
+https://www.exploit-db.com/exploits/52001
 ```
  Exploit Title: Flowise 1.6.5 - Authentication Bypass
 # Date: 17-April-2024
