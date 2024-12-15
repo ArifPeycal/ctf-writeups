@@ -1,4 +1,6 @@
 
+## Description
+> In the lawless expanse of the Frontier Cluster, Apolo serves as a beacon of security, working to safeguard the Frontier Cluster's assets from bounty hunters.
 ![image](https://github.com/user-attachments/assets/c892a871-3be9-48d6-a05d-72082e7f6d5b)
 
 ![image](https://github.com/user-attachments/assets/84b4f90f-c94c-4197-b644-9062beec7f75)
