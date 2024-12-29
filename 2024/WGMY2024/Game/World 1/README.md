@@ -1,5 +1,7 @@
 # World 1
 
+**credits to @manno593 for solving**
+
 ## Description
 > Game hacking is back!
 > 
