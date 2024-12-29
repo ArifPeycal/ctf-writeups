@@ -7,6 +7,9 @@
 > Unlock Hint for 0 points
 > Attacker too noob to ping not in sequence
 
+## First Blood!
+![image](https://github.com/user-attachments/assets/c6d9471b-9a3c-4cde-8aa5-2a915e23f1eb)
+
 ## Solution
 
 Since it is hinted in the title about ICMP (first letter of each word), we can filter the packets that have ICMP protocols.
@@ -51,3 +54,5 @@ if __name__ == "__main__":
 ```
 WGMY{1e3b71d57e466ab71b43c2641a4b34f4}
 ```
+
+
