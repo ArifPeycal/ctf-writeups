@@ -7,6 +7,9 @@
 > View Hint
 > The element is the number in the list, combine for the flag. Wrap in wgmy{}
 
+## First Blood
+![image](https://github.com/user-attachments/assets/a5f73308-ef0f-42ea-a4de-698cc1ae79d3)
+
 ## Solution
 
 If you read the file using pydicom, you can see the char in the file. So, we need to extract the first letters from private tag data, rearrange them according to the provided index list and print the result as wgmy{<arranged_letters>}.
