@@ -28,10 +28,11 @@ phi = (p - 1) * (q - 1) * (r - 1)
 d = mod_inverse(e, phi)
 m = pow(c, d, N)
 flag = m.to_bytes((m.bit_length() + 7) // 8, "big")
+print("Decrypted flag:", flag)
+
 ```
 
 ## Flag
 ```
 3108{g3n1uS_m4th3MAT1K_D1lUp4k4N}
 ```
-print("Decrypted flag:", flag)
